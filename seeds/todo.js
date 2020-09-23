@@ -4,7 +4,7 @@ exports.seed = function (knex, Promise) {
     .del()
     .then(function () {
       // Inserts seed entries
-      return knex("upreguntasIbox").insert([
+      return knex("preguntasIbox").insert([
         {
           pregunta: "¿Hola buenas tardes",
           correo: "hola@hotmail.com",
