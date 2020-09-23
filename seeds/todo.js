@@ -1,15 +1,16 @@
-exports.seed = function (knex) {
+exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries
   return knex("preguntasIbox")
     .del()
     .then(function () {
-      const pregunta = [
+      // Inserts seed entries
+      return knex("upreguntasIbox").insert([
         {
           pregunta: "¿Hola buenas tardes",
           correo: "hola@hotmail.com",
           estado: "prendiente",
           nombre: "Miguel Hernandez",
         },
-      ];
+      ]);
     });
 };
