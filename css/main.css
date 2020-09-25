@@ -31,7 +31,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-90%, -50%);
+  transform: translate(-85%, -50%);
 }
 
 .navigation {
@@ -98,7 +98,7 @@ input[name="r"] {
 
 .caja {
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #ffffff;
   background: #18476a;
@@ -108,6 +108,16 @@ input[name="r"] {
   padding-bottom: 10px;
 }
 
-.caja:hover {
-  background: black;
+.border-button {
+  box-shadow: 0px 0px 0px 5px #efb810;
+  transition: box-shadow 0.4s linear;
+  margin: 0.5em;
+}
+
+.border-button:hover {
+  box-shadow: 0px 0px 0px 10px #efb810;
+}
+
+.imgMargin {
+  margin-right: 15px;
 }
