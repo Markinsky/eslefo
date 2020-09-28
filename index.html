@@ -85,16 +85,34 @@
       </div>
     </div>
 
-    <div class = "position rig" onclick="hola()">
+    <div class = "position rig" id = "oiecomova" onclick="hola()">
       <div class = "border-button caja">
         <img class = "imgMargin" src="img/poll.png" >
         <label >Realiza una encuesta</label>
       </div>
     </div>
 
-    <div class="popup">
+    <div class="popup font-stuff">
       <div class="popup-content">
-        <label> Hola</label>
+        <img class = "on-a-cross" src= "img/cancelar.png" id = "mary" onclick="adios()">
+        <label> Hola, favor de llenar la encuesta:</label>
+        <label> ¿Que calificacion le daria en general a la Escuela de lenguas foraneas?</label>
+        <label> Calificacion:</label> 
+        <select class = "font-stuffs">
+          <option value=""> Selecciona </option>
+          <option value= "10"> 10 </option>
+          <option value= "9"> 9 </option>
+          <option value= "8"> 8 </option>
+          <option value= "7"> 7 </option>
+          <option value= "6"> 6 </option>
+          <option value= "5"> 5 </option>
+          <option value= "4"> 4 </option>
+          <option value= "3"> 3 </option>
+          <option value= "2"> 2 </option>
+          <option value= "1"> 1 </option>
+        </select>
+        <br>
+        <input class = "butt" type = "button" value = "Enviar" id = "subirEncuesta">
       </div>
     </div>
   </body>
