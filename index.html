@@ -10,6 +10,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script src="events/first.js"></script>
   </head>
   <body class = "back">
     <div class="">
@@ -24,7 +25,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link navbar-custom" href="/crud/uuu.html"
+            <a class="nav-link navbar-custom" href="/crud/uuu.html" 
               >Videos</a
             >
           </li>
@@ -57,14 +58,13 @@
       </ul>
       </nav>
     </div>
-
-    <div class = "sliderMiddle  middle">
-      <div class = "slides">
-        <input type="radio" name="r" id="r1" checked>
+    <div class = "sliderMiddle  middle" >
+      <div class = "slides" >
+        <input type="radio" name="r" id="r1" checked >
         <input type="radio" name="r" id="r2">
         <input type="radio" name="r" id="r3">
         <input type="radio" name="r" id="r4">
-        <div class = "slide s1">
+        <div class = "slide s1" >
           <img src="img/1.png">
         </div>
         <div class = "slide">
@@ -77,7 +77,7 @@
           <img src="img/4.png">
         </div>
       </div>
-      <div class = "navigation">
+      <div class = "navigation" >
         <label for = "r1" class="bar"></label>
         <label for = "r2" class="bar"></label>
         <label for = "r3" class="bar"></label>
@@ -85,10 +85,16 @@
       </div>
     </div>
 
-    <div class = "position rig">
+    <div class = "position rig" onclick="hola()">
       <div class = "border-button caja">
-        <img class = "imgMargin" src="img/poll.png">
-        <label>Realiza una encuesta</label>
+        <img class = "imgMargin" src="img/poll.png" >
+        <label >Realiza una encuesta</label>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup-content">
+        <label> Hola</label>
       </div>
     </div>
   </body>
