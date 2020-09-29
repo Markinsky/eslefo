@@ -97,6 +97,7 @@
         <img class = "on-a-cross" src= "img/cancelar.png" id = "mary" onclick="adios()">
         <label> Hola, favor de llenar la encuesta:</label>
         <label> ¿Que calificacion le daria en general a la Escuela de lenguas foraneas?</label>
+        <br>
         <label> Calificacion:</label> 
         <select class = "font-stuffs" id = "selectEncuesta" onclick="mostrar()">
           <option value=null> -Selecciona- </option>
@@ -112,15 +113,19 @@
           <option value= "1"> 1 </option>
         </select>
         <div class = "oculto">
-          <label> Por favor escribe en que podemos mejorar:</label>
+          <div>
+            <label> Por favor escribe en que podemos mejorar:</label>
+          <br>
           <input type = "text" id = "inputEncuesta" >
           <br>
           <label>Selecciona que campos podriamos mejorar</label>
           <br>
           <label><input type="checkbox" id="cbox1" value="Instalaciones"> Instalaciones</label><br>
           <label><input type="checkbox" id="cbox2" value="web"> Pagina web</label><br>
-          <label><input type="checkbox" id="cbox3" value="servicios">Servicios</label><br>
-          <label><input type="checkbox" id="cbox4" value="contacto">Contacto</label><br>
+          <label><input type="checkbox" id="cbox3" value="servicios"> Servicios</label><br>
+          <label><input type="checkbox" id="cbox4" value="contacto"> Contacto</label><br>
+          </div>
+          
         </div>
         <br>
         <input class = "butt" type = "button" value = "Enviar" id = "subirEncuesta">

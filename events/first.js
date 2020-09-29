@@ -16,8 +16,8 @@ function mostrar() {
 
   if (datoB <= 7) {
     document.querySelector(".oculto").style.display = "flex";
-    document.querySelector(".popup-content").style.height = "500px";
-    document.querySelector(".popup-content").style.width = "1000px";
+    document.querySelector(".popup-content").style.height = "590px";
+    document.querySelector(".popup-content").style.width = "550px";
   } else {
     document.querySelector(".oculto").style.display = "none";
     document.querySelector(".popup-content").style.height = "250px";
