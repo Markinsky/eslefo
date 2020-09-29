@@ -9,3 +9,18 @@ function adios() {
     document.querySelector(".popup").style.display = "none";
   });
 }
+
+function mostrar() {
+  var dato = document.getElementById("selectEncuesta");
+  datoB = dato.value;
+
+  if (datoB <= 7) {
+    document.querySelector(".oculto").style.display = "flex";
+    document.querySelector(".popup-content").style.height = "500px";
+    document.querySelector(".popup-content").style.width = "1000px";
+  } else {
+    document.querySelector(".oculto").style.display = "none";
+    document.querySelector(".popup-content").style.height = "250px";
+    document.querySelector(".popup-content").style.width = "500px";
+  }
+}
