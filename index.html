@@ -94,12 +94,13 @@
 
     <div class="popup font-stuff">
       <div class="popup-content">
+        <form class = "form" action="/post" method="POST">
         <img class = "on-a-cross" src= "img/cancelar.png" id = "mary" onclick="adios()">
         <label> Hola, favor de llenar la encuesta:</label>
         <label> ¿Que calificacion le daria en general a la Escuela de lenguas foraneas?</label>
         <br>
         <label> Calificacion:</label> 
-        <select class = "font-stuffs" id = "selectEncuesta" onclick="mostrar()">
+        <select class = "font-stuffs" id = "selectEncuesta" onclick="mostrar()" name="calificacion">
           <option value=null> -Selecciona- </option>
           <option value= "10"> 10 </option>
           <option value= "9"> 9 </option>
@@ -116,7 +117,7 @@
           <div>
             <label> Por favor escribe en que podemos mejorar:</label>
           <br>
-          <input type = "text" id = "inputEncuesta" >
+          <input type = "text" id = "inputEncuesta" name="respuesta">
           <br>
           <label>Selecciona que campos podriamos mejorar</label>
           <br>
@@ -128,8 +129,9 @@
           
         </div>
         <br>
-        <input class = "butt" type = "button" value = "Enviar" id = "subirEncuesta">
+        <input class = "butt" type = "button" value = "Enviar" id = "subirEncuesta" >
       </div>
     </div>
+  </form>
   </body>
 </html>
