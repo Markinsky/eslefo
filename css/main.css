@@ -216,3 +216,23 @@ input[name="r"] {
 .platinumButton:hover {
   background: yellowgreen;
 }
+
+.titles {
+  color: black;
+  margin-top: 25px;
+}
+
+.reality label {
+  color: #282828;
+  font-size: 20px;
+}
+
+.signum {
+  position: absolute;
+  top: 110px;
+  left: 120px;
+  height: 360px;
+  width: 1100px;
+  background: #18476a;
+  padding: 20px;
+}
