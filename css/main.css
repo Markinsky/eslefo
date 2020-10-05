@@ -230,31 +230,16 @@ input[name="r"] {
 .signum {
   position: absolute;
   top: 110px;
-  left: 120px;
-  height: 440px;
-  width: 1050px;
+  left: 200px;
+  height: 660px;
+  margin-bottom: 20px;
+  width: 800px;
   background: #18476a;
   padding: 20px;
 }
 
-.iz {
-  float: left;
-}
-.iz label {
-  margin-right: 10px;
-  margin-top: 5px;
-}
-.der {
-  float: right;
-}
-.der label {
-  margin-right: 10px;
-  margin-top: 5px;
-}
-
 .signButton {
   margin-top: 20px;
-  margin-left: 450px;
   background-color: tomato;
   padding: 10px 15px;
   border: none;
@@ -263,4 +248,9 @@ input[name="r"] {
 
 .signButton:hover {
   background: yellowgreen;
+}
+
+.nana {
+  width: 220px;
+  height: 40px;
 }
