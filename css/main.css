@@ -231,8 +231,36 @@ input[name="r"] {
   position: absolute;
   top: 110px;
   left: 120px;
-  height: 360px;
-  width: 1100px;
+  height: 440px;
+  width: 1050px;
   background: #18476a;
   padding: 20px;
+}
+
+.iz {
+  float: left;
+}
+.iz label {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.der {
+  float: right;
+}
+.der label {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.signButton {
+  margin-top: 20px;
+  margin-left: 450px;
+  background-color: tomato;
+  padding: 10px 15px;
+  border: none;
+  font-size: 20px;
+}
+
+.signButton:hover {
+  background: yellowgreen;
 }
