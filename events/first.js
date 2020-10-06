@@ -24,15 +24,3 @@ function mostrar() {
     document.querySelector(".popup-content").style.width = "500px";
   }
 }
-
-document.querySelectorAll(".accordion__button").forEach((button) => {
-  button.addEventListener("click", () => {
-    const contenido = button.nextElementSibling;
-    button.classList.toggle("accordion__button--active");
-    if (button.classList.contains("accordion__button--active")) {
-      contenido.style.maxHeight = contenido.scrollHeight + "px";
-    } else {
-      contenido.style.maxHeight = 0;
-    }
-  });
-});

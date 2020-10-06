@@ -61,28 +61,97 @@
     </div>
 
     <div class="container accordion">
-      <button type="button" class="accordion__button">EXPANDS</button>
+      <button type="button" class="accordion__button">
+        ¿Puedo revalidar mis conocimientos y habilidades si ya fui estudiante de
+        eslefo?
+      </button>
       <div class="accordion__content">
         <p>AAAAAAAAAAAAAAAAA</p>
       </div>
     </div>
 
-    <div class="container">
-      <div>
-        <h2>
-          ¿Puedo revalidar mis conocimientos y habilidades si ya fui estudiante
-          de eslefo?
-        </h2>
-        <h2>¿Que pasa si no apruebo duramte el curso?</h2>
-        <h2>¿Metodos de pago?</h2>
-        <h2>¿Como puedo inscribirme?</h2>
-        <h2>¿Cual es la calificacion minima?</h2>
-        <h2>¿Me pueden cambiar de horario?</h2>
-        <h2>¿Precios?</h2>
-        <h2>¿Que material de trabajo?</h2>
-        <h2>¿Esta afiliada a la SEP?</h2>
-        <h2>¿Es obligatorio iniciar mi curso de ingles desde 0?</h2>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">
+        ¿Que pasa si no apruebo duramte el curso?
+      </button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
       </div>
     </div>
+
+    <div class="container accordion">
+      <button type="button" class="accordion__button">¿Metodos de pago?</button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">
+        ¿Como puedo inscribirme?
+      </button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">
+        ¿Cual es la calificacion minima?
+      </button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">
+        ¿Me pueden cambiar de horario?
+      </button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">¿Precios?</button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">
+        ¿Que material de trabajo?
+      </button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">
+        ¿Esta afiliada a la SEP?
+      </button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+    <div class="container accordion">
+      <button type="button" class="accordion__button">
+        ¿Es obligatorio iniciar mi curso de ingles desde 0?
+      </button>
+      <div class="accordion__content">
+        <p>AAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".accordion__button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const contenido = button.nextElementSibling;
+          button.classList.toggle("accordion__button--active");
+          if (button.classList.contains("accordion__button--active")) {
+            contenido.style.maxHeight = contenido.scrollHeight + "px";
+          } else {
+            contenido.style.maxHeight = 0;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
